@@ -1,0 +1,409 @@
+@font-face {
+  font-family: 'picnic';
+  src: url('fonts/PicNic-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'resistance';
+  src: url('fonts/Resistance générale.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'necto';
+  src: url('fonts/Necto-Mono.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'ava';
+  src: url('fonts/Avara-Bold_Italic_web.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'egypt';
+  src: url('fonts/ThroneOfEgyptRegular-AoM7.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'karrik';
+  src: url('fonts/Karrik-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'karrikit';
+  src: url('fonts/Karrik-italic.woff') format('woff');
+}
+
+
+<link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed"rel="stylesheet">* {
+    box-sizing: border-box;
+}
+
+body {
+/*    background-color: #fdee00;*/
+/*  background-color: #e4d00a;*/
+    background-image: url(images/blackblob.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+    
+    color: black;
+    cursor: url('images/curs2.png'), default;
+}
+
+.logo {
+    width: 140px;
+    position: fixed;
+    left: 2.5%;
+    bottom: 4%;    
+}
+@media only screen 
+  and (min-device-width: 300px) 
+  and (max-device-width: 700px) 
+  and (-webkit-min-device-pixel-ratio: 2) {  
+.logo {
+display:none;   
+}
+}
+
+.about {
+    overflow: visible;
+    width: auto;
+    top: 0%;
+    left: 1%;
+    font-family: 'karrik';
+    font-size: 1.1vw;
+    line-height: 2.6vh;
+    position: fixed;
+    z-index: 0;
+}
+@media only screen 
+  and (min-device-width: 300px) 
+  and (max-device-width: 700px) 
+  and (-webkit-min-device-pixel-ratio: 2) {  
+.about {
+display:none;
+}
+}
+
+.contact {
+    width: auto;
+    top: 10%;
+    left: 1%;
+    font-family: 'karrik';
+    font-size: 1.1vw;
+    line-height: 2.6vh;
+    position: fixed;
+    z-index: 0;
+}
+@media only screen 
+  and (min-device-width: 300px) 
+  and (max-device-width: 700px) 
+  and (-webkit-min-device-pixel-ratio: 2) {  
+.contact {
+display:none;
+}
+}
+
+.booksmenu {
+    margin-top: 0.5%;
+    width: 85%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    float: right;
+    display: inline-block;
+}
+
+@media only screen 
+  and (min-device-width: 300px) 
+  and (max-device-width: 700px) 
+  and (-webkit-min-device-pixel-ratio: 2) {     
+.booksmenu {
+    margin-top: 1%;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    float: center;
+    display: inline-block;
+    position: sticky;
+}
+}
+
+
+/* Style the button that is used to open and close the collapsible content */
+
+button {
+    color: black;
+    font-family: 'egypt';
+    font-size: 4vh;
+    border: none;
+    border-radius: 25px;
+    background-color: #e4d00a;
+}
+
+@media only screen 
+  and (min-device-width: 300px) 
+  and (max-device-width: 700px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+button {
+    color: black;
+    font-family: 'karrik';
+    font-size: 3vh;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: white;
+}
+}
+
+button:hover {
+    font-family: 'karrik';
+/*
+    color: black;
+    background-image: url(images/cx.png);
+    background-size: cover;
+    background-position: center;
+*/
+*/
+}
+
+.collapsible {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0%;
+    height: 6.5vh;
+    cursor: url("images/curs2.png"), pointer;
+    padding-left: 1%;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 50%;
+    text-align: left;
+    outline: none;
+    z-index: 9999999;
+}
+
+@media only screen 
+  and (min-device-width: 300px) 
+  and (max-device-width: 700px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+.collapsible {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1%;
+    height: 9vh;
+    padding-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    font-size: 20pt;
+    text-align: center;
+    outline: none;
+    z-index: 9999;
+}
+}
+
+.collapsible a{
+    font-family: 'karrik';
+    font-size: 3.5vh;
+}
+
+@media only screen 
+  and (min-device-width: 300px) 
+  and (max-device-width: 700px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+.collapsible a{
+    font-family: 'picnic';
+    font-size: 13pt;
+}
+}
+
+/* Style the collapsible content */
+
+.content {
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+padding: 0 15px ;
+    padding-bottom: 1px;
+    column-count: 2;
+    column-gap: 50px;
+    font-family: 'necto';
+    color: black;
+    font-size: 13pt;
+    line-height: 16pt;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.8s ease-out;
+}
+
+@media only screen 
+  and (min-device-width: 300px) 
+  and (max-device-width: 700px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+.content {
+    width: 95%;
+    display: block;
+    flex-direction: row;
+    padding: 0 15px;
+    font-family: 'machina';
+    color: black;
+    font-size: 15pt;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.5s ease-out;
+}
+}
+
+.content a {
+    font-family: 'karrik';
+}
+
+.content a1 {
+    font-family: 'karrik';
+}
+
+.content a2 {
+    font-family: 'karrik';
+/*    color: #0099cc;*/
+}
+
+.content a3 {
+    font-family: 'ava';
+}
+
+/* Style the collapsible slideshow container */
+.slideshow-container {
+  max-width: 80%;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+    width:95%;
+}
+
+.mySlides1 {
+    display: none;
+    width:95%;
+}
+
+.mySlides2 {
+    display: none;
+    width:95%;
+}
+
+.mySlides3 {
+    display: none;
+    width:95%;
+}
+
+
+
+/* Style the collapsible slideshow images */
+.visual {
+    width: 920px;
+    padding-top: 25px;
+    align-self: center;
+}
+
+.visual2 {
+    width: 320px;
+    padding-top: 25px;
+    align-self: center;
+}
+
+
+/* Define the "prev.& next buttons" */
+.prev, .next {
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    width: 20%;
+    margin-top: -10px;
+    padding: 26px;
+    transition: 0.8s ease;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    cursor: url("images/right.png"), pointer;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    cursor: url("images/left.png"), pointer;
+}
+
+@media screen and (max-width: 1280px) {
+  .titlemenu {
+    padding: 24px;
+    width: 100%;
+    font-family: 'machina';
+    font-size: 15pt;
+    line-height: 18pt;
+    text-decoration: none;
+    color: forestgreen;
+  }
+
+/* Screen adjustments for mobile versions
+   Second part of css styling */
+@media only screen 
+  and (min-device-width: 300px) 
+  and (max-device-width: 700px) 
+  and (-webkit-min-device-pixel-ratio: 2) {     
+.style {
+  display:inline-block;
+  width: 16.4%;
+  text-align: center;
+  color: black;
+  font-family: '1452';
+  font-size: 18px;
+  text-align: center;
+  left: -15px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  text-decoration: none;
+  border: 0.5px solid palegreen;
+  cursor: pointer;
+    border-radius: 25px;
+  background-color: palegreen;
+    z-index: 9999;
+}
+}
+
+
+
+
+/* ?????
+Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1280px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 33% 0%
+  }
+
+  50% {
+    background-position: 69% 100%
+  }
+
+  100% {
+    background-position: 32% 0%
+  }
+}
